@@ -331,18 +331,18 @@ select:focus-visible,input:focus-visible,textarea:focus-visible{outline:4px soli
       <span class="sh-ic" aria-hidden="true">📁</span><span class="sh-lbl">Build Evidence Package</span><span class="sh-arr" aria-hidden="true">▼</span>
     </button>
     <div class="sec-body" id="sb-ev">
-      <p style="font-size:.8rem;color:var(--gray3);line-height:1.7;margin-bottom:12px;">Generates a numbered dated evidence log formatted for legal or journalistic submission.</p>
+      <p style="font-size:.8rem;color:var(--gray3);line-height:1.7;margin-bottom:12px;">Generates a numbered, dated evidence log you can hand to a lawyer or journalist. Whether it is admissible is decided by a court, not this app.</p>
       <label for="case-name">Case name or reference (optional)</label>
       <input type="text" id="case-name" placeholder="e.g. Lighthouse for the Blind — Earle Baum Center" aria-label="Case name">
       <label for="investigator-name">Investigator name (optional)</label>
       <input type="text" id="investigator-name" placeholder="e.g. Nadine Beauchamp" aria-label="Investigator name">
             <button class="btn" id="btn-verify-chain" onclick="showChainStatus()" aria-label="Verify the integrity of the hash chain. Checks for tampering."><span class="b-ic" aria-hidden="true">🔗</span><span class="b-lbl">Verify Chain Integrity</span><span class="b-sub">Tamper check</span></button>
-      <button class="btn" id="btn-export-chain" onclick="exportChain()" aria-label="Export the hash chain ledger as a text file."><span class="b-ic" aria-hidden="true">⛓</span><span class="b-lbl">Export Hash Chain Ledger</span><span class="b-sub">Court-admissible</span></button>
+      <button class="btn" id="btn-export-chain" onclick="exportChain()" aria-label="Export the hash chain ledger as a text file."><span class="b-ic" aria-hidden="true">⛓</span><span class="b-lbl">Export Hash Chain Ledger</span><span class="b-sub">Tamper-evident record</span></button>
       <button class="btn" id="btn-clear-chain" onclick="clearChain()" aria-label="Clear saved chain from this device."><span class="b-ic" aria-hidden="true">🗑</span><span class="b-lbl">Clear Saved Chain</span></button>
 <button class="btn pri" id="btn-build-ev" aria-label="Build the complete evidence package."><span class="b-ic" aria-hidden="true">📋</span><span class="b-lbl">Build Evidence Package</span></button>
       <button class="btn" id="btn-export-ev" style="display:none;" aria-label="Export evidence as text file."><span class="b-ic" aria-hidden="true">💾</span><span class="b-lbl">Export Evidence File</span></button>
       <button class="btn" id="btn-export-csv" aria-label="Export all records as CSV."><span class="b-ic" aria-hidden="true">📊</span><span class="b-lbl">Export Audit CSV</span></button>
-      <button class="btn" id="btn-print-ev" style="display:none;" aria-label="Print for court submission."><span class="b-ic" aria-hidden="true">🖨</span><span class="b-lbl">Print for Court Submission</span></button>
+      <button class="btn" id="btn-print-ev" style="display:none;" aria-label="Print the evidence package."><span class="b-ic" aria-hidden="true">🖨</span><span class="b-lbl">Print Evidence Package</span></button>
       <div id="evidence-preview" aria-live="polite" role="region" aria-label="Evidence package preview"></div>
     </div>
   </div>
